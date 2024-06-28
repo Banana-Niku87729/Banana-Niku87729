@@ -26,26 +26,3 @@ li:nth-child(2) {
   margin: 0 10px;
 }
 
-/* PC向けスタイル */
-.desktop-content {
-  display: block;
-}
-
-.mobile-content {
-  display: none;
-}
-
-/* スマホ向けスタイル */
-@media (max-width: 768px) {
-  .desktop-content {
-    display: none;
-  }
-  .mobile-content {
-    display: block;
-  }
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
