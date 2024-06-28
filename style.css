@@ -24,15 +24,21 @@ body {
   }
 </style>
 
-@media screen and (max-width: 768px) {
-  /* 768px以下の画面サイズで適用されるスタイル */
+/* PC向けスタイル */
+.desktop-content {
+  display: block;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  /* 769px~1024pxの画面サイズで適用されるスタイル */
+.mobile-content {
+  display: none;
 }
 
-@media screen and (min-width: 1025px) {
-  /* 1025px以上の画面サイズで適用されるスタイル */
+/* スマホ向けスタイル */
+@media (max-width: 768px) {
+  .desktop-content {
+      display: none;
+  }
+  .mobile-content {
+      display: block;
+  }
 }
-
