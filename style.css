@@ -1,44 +1,49 @@
 body {
-    background-color: #ffffaf;
-  }
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #1bacbf;
-      color:#FFFFFF;
-  }
+  background-color: #ffffaf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-<style>
-  ul {
-    display: flex;
-    justify-content: center;
-  }
+@media (prefers-color-scheme: dark) {
+body {
+  background-color: #1bacbf;
+  color: #FFFFFF;
+}
+}
 
-  li {
-    list-style: none;
-  }
+ul {
+  display: flex;
+  justify-content: center;
+}
 
-  li:nth-child(2) {
-    margin: 0 10px;
-  }
-</style>
+li {
+  list-style: none;
+}
+
+li:nth-child(2) {
+  margin: 0 10px;
+}
 
 /* PC向けスタイル */
 .desktop-content {
-  display: block;
+display: block;
 }
 
 .mobile-content {
-  display: none;
+display: none;
 }
 
 /* スマホ向けスタイル */
 @media (max-width: 768px) {
-  .desktop-content {
-      display: none;
-  }
-  .mobile-content {
-      display: block;
-  }
+.desktop-content {
+    display: none;
+}
+.mobile-content {
+    display: block;
+}
 }
