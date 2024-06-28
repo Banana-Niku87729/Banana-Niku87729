@@ -1,24 +1,21 @@
 body {
   background-color: #ffffaf;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
 @media (prefers-color-scheme: dark) {
-body {
-  background-color: #1bacbf;
-  color: #FFFFFF;
-}
+  body {
+    background-color: #1bacbf;
+    color: #FFFFFF;
+  }
 }
 
 ul {
   display: flex;
   justify-content: center;
+  padding: 0;
 }
 
 li {
@@ -31,19 +28,24 @@ li:nth-child(2) {
 
 /* PC向けスタイル */
 .desktop-content {
-display: block;
+  display: block;
 }
 
 .mobile-content {
-display: none;
+  display: none;
 }
 
 /* スマホ向けスタイル */
 @media (max-width: 768px) {
-.desktop-content {
+  .desktop-content {
     display: none;
-}
-.mobile-content {
+  }
+  .mobile-content {
     display: block;
+  }
 }
+
+img {
+  max-width: 100%;
+  height: auto;
 }
